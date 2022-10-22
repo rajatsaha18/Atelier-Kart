@@ -17,6 +17,11 @@ When customer add to cart any products open checkout page. there show products q
 ![Screenshot (127)](https://user-images.githubusercontent.com/85999223/197323681-078f7605-f767-43b4-a1a6-3c4919ccf9d4.png)
 ![Screenshot (128)](https://user-images.githubusercontent.com/85999223/197323728-796ebb23-6877-473e-a971-dc3cd2045b77.png)
 
+![Screenshot (137)](https://user-images.githubusercontent.com/85999223/197324455-13b15750-5662-4146-97d2-9bd244d4e9ef.png)
+![Screenshot (138)](https://user-images.githubusercontent.com/85999223/197324465-f8e4799f-c86c-4598-8b73-069f9b49ce83.png)
+![Screenshot (139)](https://user-images.githubusercontent.com/85999223/197324471-bde1d7b9-c51d-474b-b3d8-71027a51fcc5.png)
+![Screenshot (140)](https://user-images.githubusercontent.com/85999223/197324477-9c0eb3d2-2da4-4721-a90a-7098a5ad83e6.png)
+
 ## WEBSITE AUTHENTICATION:
 
 Customer craete account this website and when they logged in they can go to their dashboard and which products are order, those products details are availabe here.
