@@ -18,10 +18,11 @@ When customer add to cart any products open checkout page. there show products q
 ![Screenshot (128)](https://user-images.githubusercontent.com/85999223/197323728-796ebb23-6877-473e-a971-dc3cd2045b77.png)
 
 ![Screenshot (129)](https://user-images.githubusercontent.com/85999223/197324531-d26a57d6-abad-40bc-bebe-bce423ece9a0.png)
+![Screenshot (141)](https://user-images.githubusercontent.com/85999223/197324618-a7f31929-0285-4c2f-8f0c-0cf98b1dc251.png)
 
 ![Screenshot (136)](https://user-images.githubusercontent.com/85999223/197324519-39f431a8-5a38-4009-8c7d-428107dde7aa.png)
 
-![Screenshot (141)](https://user-images.githubusercontent.com/85999223/197324618-a7f31929-0285-4c2f-8f0c-0cf98b1dc251.png)
+
 
 ![Screenshot (137)](https://user-images.githubusercontent.com/85999223/197324455-13b15750-5662-4146-97d2-9bd244d4e9ef.png)
 ![Screenshot (138)](https://user-images.githubusercontent.com/85999223/197324465-f8e4799f-c86c-4598-8b73-069f9b49ce83.png)
