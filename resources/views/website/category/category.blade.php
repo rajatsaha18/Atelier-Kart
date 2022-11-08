@@ -10,7 +10,7 @@
             <ul>
                 <li><i class="fa fa-home" aria-hidden="true"></i><a href="{{route('home')}}">Home</a><span>|</span></li>
 
-                <li></li>
+                <li>{{$categoryName->name}}</li>
 
             </ul>
         </div>
@@ -55,7 +55,7 @@
                 <div class="w3ls_w3l_banner_nav_right_grid ">
                     <h3>Popular Brands</h3>
                     <div class="w3ls_w3l_banner_nav_right_grid1">
-                        <h6>food</h6>
+                        <h6>{{$categoryName->name}}</h6>
                         <div class="row pro-grids-inn">
                             @foreach($products as $product)
                             <div class="col-lg-3 col-sm-6 w3ls_w3l_banner_left">

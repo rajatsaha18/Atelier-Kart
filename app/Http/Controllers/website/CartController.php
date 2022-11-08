@@ -70,7 +70,6 @@ class CartController extends Controller
                 'delivery_address'  => 'required',
             ]);
             $this->customer = Customer::newCustomer($request);
-
             Session::put('customer_id', $this->customer->id);
             Session::put('customer_name', $this->customer->name);
         }
@@ -101,18 +100,6 @@ class CartController extends Controller
         {
             $sslPayment = new SslCommerzPaymentController();
             $sslPayment->onlinePayment($request,$this->customer);
-
-            /*===============mail send code================*/
-            $this->mailBody = [
-                'title' => 'This is mail title',
-                'body' => 'This is mail body',
-
-            ];
-            Mail::to($this->customer->email)->send(new OrderConfirmationMail($this->mailBody));
-            /*===============mail send code================*/
-
-
-            return redirect('/complete-order')->with('message', 'your order successfully post. please wait we will contact you with soon');
 
         }
 
