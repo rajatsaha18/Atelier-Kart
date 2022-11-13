@@ -8,7 +8,7 @@
     <section class="py-5 bg-secondary">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mx-auto">
+                <div class="col-md-4 mx-auto">
                     <div class="card text-muted">
                         <div class="card-header text-success text-center text-bold">Sign Up Form</div>
                         <div class="card-body">
@@ -17,13 +17,11 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Full Name</label>
                                     <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
-
                                 </div>
 
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
                                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-
                                 </div>
 
                                 <div class="form-group">
@@ -37,10 +35,12 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-success" name="btn" value="Sign Up"/>
+                                    <input type="submit" class="btn btn-success btn-block" name="btn" value="Sign Up"/>
                                 </div>
 
                             </form>
+                            <br>
+                            <a href="{{ route('customer-login') }}" class="text-primary">Already Registered !! Login Here</a>
                         </div>
                     </div>
                 </div>

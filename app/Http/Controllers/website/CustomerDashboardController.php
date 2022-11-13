@@ -16,4 +16,14 @@ class CustomerDashboardController extends Controller
         return view('website.customer.home', ['orders' => $this->orders]);
     }
 
+    public function profile()
+    {
+        return view('website.customer.profile');
+    }
+
+    public function account()
+    {
+        return view('website.customer.account');
+    }
+
 }

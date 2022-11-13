@@ -11,9 +11,9 @@
                 <div class="col-md-3">
                     <div class="card card-body">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="">My Profile</a></li>
-                            <li class="list-group-item"><a href="">My Order</a></li>
-                            <li class="list-group-item"><a href="">My Accounts</a></li>
+                            <li class="list-group-item"><a href="{{ route('customer-dashboard') }}">My Dashboard</a></li>
+                            <li class="list-group-item"><a href="{{ route('customer-profile') }}">My Profile</a></li>
+                            <li class="list-group-item"><a href="{{ route('customer-account') }}">My Accounts</a></li>
                             <li class="list-group-item"><a href="">Change Password</a></li>
                         </ul>
                     </div>

@@ -53,7 +53,13 @@ Route::post('/customer-signin', [CustomerAuthController::class, 'signIn'])->name
 Route::get('/customer-signup', [CustomerAuthController::class, 'signUp'])->name('customer-signup');
 Route::post('/new-customer', [CustomerAuthController::class, 'newCustomer'])->name('new-customer');
 
-Route::get('/customer-dashboard', [CustomerDashboardController::class, 'index'])->name('customer-dashboard');
+Route::middleware(['customer'])->group(function (){
+    Route::get('/customer-dashboard', [CustomerDashboardController::class, 'index'])->name('customer-dashboard');
+    Route::get('/customer-profile', [CustomerDashboardController::class, 'profile'])->name('customer-profile');
+    Route::get('/customer-account', [CustomerDashboardController::class, 'account'])->name('customer-account');
+});
+
+
 
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
