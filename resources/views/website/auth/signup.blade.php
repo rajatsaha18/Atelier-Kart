@@ -16,22 +16,26 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Full Name</label>
-                                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
+                                    <input type="text" name="name" class="form-control" placeholder="Full Name">
+                                    <span class="text-danger">{{$errors->has('name') ? $errors->first('name') : ''}}</span>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email address</label>
                                     <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <span class="text-danger">{{$errors->has('email') ? $errors->first('email') : ''}}</span>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <input type="password" name="password" class="form-control" placeholder="Password">
+                                    <span class="text-danger">{{$errors->has('password') ? $errors->first('password') : ''}}</span>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Mobile</label>
                                     <input type="number" name="mobile" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number">
+                                    <span class="text-danger">{{$errors->has('mobile') ? $errors->first('mobile') : ''}}</span>
                                 </div>
 
                                 <div class="form-group">
