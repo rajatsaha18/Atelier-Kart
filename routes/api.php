@@ -21,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/all-category',[ApiController::class,'getAllCategory'])->name('category');
 Route::get('/latest-products',[ApiController::class,'getAllProduct'])->name('latest-products');
 Route::get('/product-by-category/{id}',[ApiController::class,'getProductByCategory'])->name('product-by-category');
+Route::get('/product-by-id/{id}',[ApiController::class,'getProductById'])->name('product-by-id');

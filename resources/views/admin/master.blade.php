@@ -375,6 +375,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="{{route('order.manage')}}"><i class="fa fa-angle-right"></i> Manage Order</a></li>
+                                <li><a href="{{route('admin-order.report')}}"><i class="fa fa-angle-right"></i> Order Report</a></li>
 
                             </ul>
                         </li>

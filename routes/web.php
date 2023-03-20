@@ -15,6 +15,7 @@ use App\Http\Controllers\website\CustomerDashboardController;
 use App\Http\Controllers\admin\AdminOrderController;
 use App\Http\Controllers\SslCommerzPaymentController;
 use App\Http\Controllers\admin\UserController;
+use App\Http\Controllers\admin\ReportController;
 
 
 /*
@@ -109,6 +110,9 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('/admin-order-edit/{id}', [AdminOrderController::class, 'edit'])->name('admin-order.edit');
     Route::post('/admin-order-update/{id}', [AdminOrderController::class, 'update'])->name('admin-order.update');
     Route::get('/admin-order-delete/{id}', [AdminOrderController::class, 'delete'])->name('admin-order.delete');
+
+    Route::get('/admin-order-report', [ReportController::class, 'index'])->name('admin-order.report');
+    Route::post('/admin-new-order-report', [ReportController::class, 'create'])->name('admin-new-order.report');
 
     Route::get('/admin-user-manage', [UserController::class, 'manage'])->name('user.manage');
     Route::get('/admin-user-delete/{id}', [UserController::class, 'delete'])->name('user.delete');
