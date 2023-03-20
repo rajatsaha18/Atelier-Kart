@@ -66,7 +66,7 @@
                                         <figure>
                                             <div class="snipcart-item block">
                                                 <div class="snipcart-thumb">
-                                                    <a href=""><img src="{{asset($product->image)}}" alt=" " height="140" width="110" class="img-fluid" /></a>
+                                                    <a href="{{ route('detail', ['id' => $product->id]) }}"><img src="{{asset($product->image)}}" alt=" " height="140" width="110" class="img-fluid" /></a>
                                                     <p>{{$product->name}} <span>
                                                             @if($product->stock_amount > 0)
                                                                 <button type="button" class="btn btn-info px-2 sm:-ml-5">Instock</button>
