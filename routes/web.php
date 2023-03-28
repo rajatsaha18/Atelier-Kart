@@ -38,6 +38,7 @@ Route::get('/Best-Deals', [HomeController::class, 'bestDeal'])->name('best-deals
 Route::get('/Services', [HomeController::class, 'service'])->name('service');
 Route::get('/events', [HomeController::class, 'events'])->name('events');
 Route::get('/Contact Us', [HomeController::class, 'contact'])->name('contact');
+Route::get('/search-product', [HomeController::class, 'search'])->name('search');
 
 
 Route::post('/add-to-cart/{id}', [CartController::class, 'index'])->name('add-to-cart');

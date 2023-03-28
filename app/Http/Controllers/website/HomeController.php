@@ -12,9 +12,10 @@ class HomeController extends Controller
     private $category;
     private $products;
     private $product;
+    private $searchProduct;
+
     public function index()
     {
-
         $this->products = Product::orderBy('id', 'desc')->take(8)->get(['id','name', 'selling_price','regular_price', 'image', 'stock_amount', 'category_id']);
         return view('website.home.home',[
 
@@ -39,18 +40,15 @@ class HomeController extends Controller
             'products' => $this->products
         ]);
     }
-
     public function detail($id)
     {
         $this->product = Product::find($id);
         return view('website.detail.detail', ['product' => $this->product]);
     }
-
     public function about()
     {
         return view('website.about.about');
     }
-
     public function bestDeal()
     {
         return view('website.best-deal.best-deal');
@@ -60,7 +58,6 @@ class HomeController extends Controller
     {
         return view('website.service.service');
     }
-
     public function contact()
     {
         return view('website.contact.contact');
@@ -74,5 +71,12 @@ class HomeController extends Controller
     public function checkout()
     {
         return view('website.checkout.checkout');
+    }
+
+    public function search(Request $request)
+    {
+
+        $this->searchProduct = Product::where('name','like', '%'.$request->input('search').'%')->get();
+        return view('website.search.search',['products' => $this->searchProduct]);
     }
 }

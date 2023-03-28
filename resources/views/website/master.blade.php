@@ -212,7 +212,8 @@
         <a href="products.html">Today's special Offers !</a>
     </div>
     <div class="w3l_search">
-        <form action="#" method="GET" class="d-flex">
+        <form action="{{ route('search') }}" method="GET" class="d-flex">
+
             <input type="search" placeholder="Search.." name="search" required="required" autofocus="">
             <button type="submit"><span class="fa fa-search"></span></button>
 

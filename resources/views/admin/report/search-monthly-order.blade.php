@@ -1,7 +1,7 @@
 @extends('admin.master')
 
 @section('title')
-@endsection
+search-report
 
 @section('body')
 @endsection

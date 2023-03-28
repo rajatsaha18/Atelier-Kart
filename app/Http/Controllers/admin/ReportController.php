@@ -23,6 +23,6 @@ class ReportController extends Controller
         $this->orders = Order::where('order_timestamp' ,'>=', $startTimeStamp)
                               ->where('order_timestamp','<=',$endTimeStamp)
                               ->orderBy('id', 'desc')->get();
-        return view('admin.report.monthly-order');
+        return view('admin.report.search-monthly-order');
     }
 }

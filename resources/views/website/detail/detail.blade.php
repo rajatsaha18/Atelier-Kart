@@ -105,7 +105,6 @@
                                         </div>
                                     </div>
                                     <fieldset>
-
                                         <input type="submit" name="submit" value="Add to cart" class="button" />
                                     </fieldset>
                                 </form>
